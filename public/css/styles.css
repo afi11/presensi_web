@@ -1,0 +1,222 @@
+.hide {
+    display: none;
+}
+
+.chart {
+    width: 100%;
+}
+
+.show {
+    display: block;
+}
+
+.basic-data-table {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.title-web {
+    padding: 5px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin: 0 10px;
+}
+
+.mapLokasiTempat {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+.img-profil-pegawai {
+    width: 100px;
+}
+
+.img {
+    width: 100%;
+}
+
+.dataTables_filter {
+    float: right !important;
+}
+
+.container-graph {
+    position: relative;
+    width: 500px;
+}
+
+.print-pdf {
+    font-family: sans-serif;
+    padding: 4px;
+}
+
+.print-pdf img {
+    width: 90px;
+}
+
+.text_right {
+    float: right;
+}
+
+.print-pdf table {
+    width: 100%;
+}
+
+.print-pdf table.det-pegawai {
+    width: auto;
+}
+
+.print-pdf table.det-pegawai tr td {
+    padding: 4px;
+    text-align: left;
+}
+
+.print-pdf table tr td {
+    text-align: center;
+}
+
+.print-pdf table tr td h5 {
+    margin-top: -15px;
+}
+
+.print-pdf .text-center {
+    text-align: center;
+}
+
+.img-bukti-izin {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+.table {
+    margin-top: 16px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.table tr th {
+    padding: 5px;
+    background-color: #353535;
+    color: #fff;
+    overflow: hidden;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr td {
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    border-right: 1px solid #ddd;
+}
+
+/* Loading CSS */
+.lds-ripple {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.lds-ripple div {
+    position: absolute;
+    border: 4px solid #000;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+    0% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        width: 72px;
+        height: 72px;
+        opacity: 0;
+    }
+}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
